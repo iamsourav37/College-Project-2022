@@ -13,4 +13,4 @@ class Category(models.Model):
 
 
     def __str__(self) -> str:
-        return f"{self.id} ---> {self.name}"
+        return f"{self.name}"
