@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'api.category.apps.CategoryConfig',
     'api.product.apps.ProductConfig',
+    'api.user.apps.UserConfig',
+    # 'api.order.apps.OrderConfig'
 ]
 
 MIDDLEWARE = [
@@ -148,6 +150,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+AUTH_USER_MODEL = 'user.CustomUser'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
